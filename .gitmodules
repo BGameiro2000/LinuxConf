@@ -1,0 +1,12 @@
+[submodule "LinuxDots"]
+	path = LinuxDots
+	url = https://github.com/BGameiro76/LinuxDots
+[submodule "ArchIso"]
+	path = ArchIso
+	url = https://github.com/BGameiro76/ArchIso
+[submodule "ArchRepo"]
+	path = ArchRepo
+	url = https://github.com/BGameiro76/ArchRepo
+[submodule "LinuxDocs"]
+	path = LinuxDocs
+	url = https://github.com/BGameiro76/LinuxDocs
