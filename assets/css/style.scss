@@ -2,51 +2,27 @@
 ---
 
 // Headers
-$header-heading-color: #80deea !default;
-$header-bg-color: #1E1E1E !default;
-$header-bg-color-secondary: #1E1E1E !default;
+$header-heading-color: #80deea;
+$header-bg-color: #1E1E1E;
+$header-bg-color-secondary: #1E1E1E;
 
 // Text
-$section-headings-color: #a5d6a7 !default;
-$body-text-color: #ffffff !default;
-$body-link-color: #388e3c !default;
-$blockquote-text-color: #819198 !default;
+$section-headings-color: #a5d6a7;
+$body-text-color: #ffffff;
+$body-link-color: #388e3c;
+$blockquote-text-color: #819198;
 
 // Code
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
+$code-bg-color: #f3f6fa;
+$code-text-color: #567482;
 
 // Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
-
-.highlight {
-    background-color: #121212;
-  };
+$border-color: #dce6f0;
+$table-border-color: #e9ebec;
+$hr-border-color: #eff0f1;
 
 @import "{{ site.theme }}";
 
-// Headers
-$header-heading-color: #80deea !default;
-$header-bg-color: #1E1E1E !default;
-$header-bg-color-secondary: #1E1E1E !default;
-
-// Text
-$section-headings-color: #a5d6a7 !default;
-$body-text-color: #ffffff !default;
-$body-link-color: #388e3c !default;
-$blockquote-text-color: #819198 !default;
-
-// Code
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
-
-// Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
-
 .highlight {
-    background-color: #121212;
-  };
+  background-color: #121212;
+};
