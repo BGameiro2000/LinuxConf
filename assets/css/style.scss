@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
 // Headers
 $header-heading-color: #80deea;
 $header-bg-color: #1E1E1E;
@@ -22,6 +24,4 @@ $hr-border-color: #eff0f1 !default;
 
 .highlight {
     background-color: #121212;
-  }
-
-@import "{{ site.theme }}";
+  };
