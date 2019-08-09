@@ -10,3 +10,6 @@
 [submodule "LinuxDocs"]
 	path = LinuxDocs
 	url = https://github.com/BGameiro76/LinuxDocs
+[submodule "LinuxScripts"]
+	path = LinuxScripts
+	url = https://github.com/BGameiro76/LinuxScripts
