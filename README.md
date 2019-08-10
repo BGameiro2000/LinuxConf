@@ -1,9 +1,3 @@
----
-category: Readme
-title: 'Linux Configurations'
-type: 'INFO'
----
-
 # BGameiro's Linux Configurations
 
 This repository consists of all information related to Linux in my systems.
