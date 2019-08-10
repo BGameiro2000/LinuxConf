@@ -1,5 +1,5 @@
 body{
-    background-color: #5B5B5B;
+    background-color: #333333;
     color: #ffffff;
 }
 
@@ -28,9 +28,9 @@ code{
 }
 
 :link{
-    color: aquamarine;
+    color: #5F5F5F;
 }
 
 :visited{
-    color: aqua
+    color: #ffffff
 }
