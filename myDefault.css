@@ -3,26 +3,34 @@ body{
     color: #ffffff;
 }
 
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #80deea;
 }
 
-h2{
-    color: #80deea;
+code{
+    color: #ffffff;
+    background-color: rgb(56, 56, 56);
 }
 
-h3{
-    color: #80deea;
+  pre {
+    color: #ffffff;
+    background-color: rgb(56, 56, 56);
+
+    > code {
+      color: #ffffff;
+      background: transparent;
+    }
 }
 
-h4{
-    color: #80deea;
+:link{
+    color: aquamarine;
 }
 
-h5{
-    color: #80deea;
-}
-
-h6{
-    color: #80deea;
+:visited{
+    color: aqua
 }
