@@ -1,6 +1,7 @@
 body{
     background-color: #24292E;
     color: #ffffff;
+    margin: 0;
 }
 
 h1,
@@ -15,16 +16,13 @@ h6 {
 code{
     color: #ffffff;
     background-color: rgb(56, 56, 56);
+    font-family: monospace, monospace;
+    font-size: 1em;
 }
 
   pre {
     color: #ffffff;
     background-color: rgb(56, 56, 56);
-
-    > code {
-      color: #ffffff;
-      background: transparent;
-    }
 }
 
 :link{
@@ -33,4 +31,10 @@ code{
 
 :visited{
     color: #ffffff
+}
+
+hr{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
