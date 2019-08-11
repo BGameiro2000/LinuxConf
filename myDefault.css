@@ -1,7 +1,21 @@
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+  
 body{
     background-color: #24292E;
     color: #ffffff;
     margin: 0;
+}
+
+main{
+    display: block;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 h1,
@@ -13,6 +27,12 @@ h6 {
     color: #3EA9F5;
 }
 
+abbr[title]{
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
 code{
     color: #ffffff;
     background-color: rgb(56, 56, 56);
@@ -20,9 +40,17 @@ code{
     font-size: 1em;
 }
 
-  pre {
+pre {
     color: #ffffff;
     background-color: rgb(56, 56, 56);
+}
+
+a{
+    background-color: transparent;
+}
+
+img{
+    border-style: none;
 }
 
 :link{
@@ -37,4 +65,8 @@ hr{
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+}
+
+details{
+    display: block;
 }
