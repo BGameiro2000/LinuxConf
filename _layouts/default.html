@@ -43,7 +43,7 @@
                 color: #cccccc;
             }
 
-            img
+            img,
             .markdown-body img{
                 background-color: transparent;
             }
@@ -55,6 +55,12 @@
     <body>
 
         <div class="container-lg px-3 my-5 markdown-body">
+
+            <div>
+
+                <p class="view"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}">batata</a></p>
+
+            </div>
 
             {{ content }}
         
