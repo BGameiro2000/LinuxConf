@@ -25,7 +25,12 @@
                 margin: 0;
             }
 
-            header{
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
                 color: #ffffff;
             }
 
@@ -56,7 +61,7 @@
 
         <div class="container-lg px-3 my-5 markdown-body">
 
-            <h1><a href="{{ site.url }}{{ site.baseurl | append:'/' }}">{{ site.baseurl }}</a></h1>
+            <h1><a href="{{ site.url }}{{ site.baseurl | append:'/' }}">{{ site.baseurl | slice:'1:'' }}</a></h1>
 
             {{ content }}
         
