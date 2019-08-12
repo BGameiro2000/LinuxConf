@@ -5,8 +5,10 @@
 */
 
 html{
-    line-height: 1.15;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
 }
   
 body{
@@ -15,8 +17,22 @@ body{
     margin: 0;
 }
 
-main{
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section{
     display: block;
+}
+
+summary{
+    display: list-item;
 }
 
 h1{
@@ -39,6 +55,7 @@ abbr[title]{
     text-decoration: underline dotted;
 }
 
+pre,
 code{
     color: #ffffff;
     background-color: rgb(56, 56, 56);
@@ -46,13 +63,13 @@ code{
     font-size: 1em;
 }
 
-pre {
-    color: #ffffff;
-    background-color: rgb(56, 56, 56);
-}
-
 a{
     background-color: transparent;
+}
+
+a:active,
+a:hover{
+    outline-width: 0;
 }
 
 img{
@@ -75,4 +92,55 @@ hr{
 
 details{
     display: block;
+}
+
+b,
+strong{
+    font-weight: inherit;
+}
+
+b,
+strong{
+    font-weight: bolder;
+}
+
+dfn{
+    font-style: italic;
+}
+
+small{
+    font-size: 80%;
+}
+
+sub,
+sup{
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub{
+    bottom: -0.25em;
+}
+
+sup{
+    top: -0.5em;
+}
+
+img{
+    border-style: none;
+}
+
+svg:not(:root){
+    overflow: hidden;
+}
+
+figure{
+    margin: 1em 40px;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 10px;
 }
