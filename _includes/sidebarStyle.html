@@ -11,17 +11,29 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.sidenav a{
+.sidenav a,
+.dropdown-btn{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    width:100%;
 }
 
-.sidenav a:hover{
+.sidenav a:hover,
+.dropdown-btn:hover{
     color: #f1f1f1;
+}
+
+.active{
+    background-color: green;
+    color: white;
 }
 
 .sidenav .closebtn{
@@ -35,4 +47,10 @@
 @media screen and (max-height: 450px){
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.dropdown-container{
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
 }

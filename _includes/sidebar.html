@@ -1,28 +1,47 @@
 <div id="mySidenav" class="sidenav">
+
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
     <a href="/">Home</a>
-    <a href="/LinuxConf/">LinuxConf</a>
-    <a href="/LinuxConf/LinuxDots">LinuxDots</a>
-    <a href="/LinuxConf/LinuxDocs">LinuxDocs</a>
-    <a href="/LinuxConf/ArchIso">ArchIso</a>
-    <a href="/LinuxConf/ArchRepo">ArchRepo</a>
-    <a href="/LinuxConf/LinuxScripts">LinuxScripts</a>
+
+    <button class="dropdown-btn">
+        <a href="/LinuxConf/">LinuxConf</a>
+    </button>
+    <div class="dropdown-container">
+            <a href="/LinuxConf/LinuxDots">LinuxDots</a>
+            <a href="/LinuxConf/LinuxDocs">LinuxDocs</a>
+            <a href="/LinuxConf/ArchIso">ArchIso</a>
+            <a href="/LinuxConf/ArchRepo">ArchRepo</a>
+            <a href="/LinuxConf/LinuxScripts">LinuxScripts</a>
+    </div>
+
 </div>
     
 <span onclick="openNav()">open</span>
-
-<div style="background-color: rgba(0,0,0,0.5)" onclick="openNav()" style="cursor:pointer"></div>
 
 <script>
 
     function openNav(){
       document.getElementById("mySidenav").style.width = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
     }
     
     function closeNav(){
       document.getElementById("mySidenav").style.width = "0";
-      document.body.style.backgroundColor = "#22252a";
     }
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function(){
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+} 
 
 </script>
