@@ -1,0 +1,45 @@
+#navbar{
+    overflow: hidden;
+    background-color: #111;
+}
+
+#navbar a{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.content{
+    padding: 16px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 60px;
+}
+
+<script>
+
+    window.onscroll = function() {stickyFunc()};
+
+    var topbar = document.getElementById("topbar");
+
+    var sticky = topbar.offsetTop;
+
+    function stickyFunc() {
+        if (window.pageYOffset >= sticky) {
+            topbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    } 
+
+</script>
