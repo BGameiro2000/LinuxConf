@@ -1,7 +1,36 @@
 <div id="topbar">
 
-    <span onclick="openNav()">></span>
+    <button onclick="openNav()" style="float: left">Menu</button>
 
-    <a>{{ site.github.project_title }}</a>
+    <div>Linux Journey</div>
+
+    <button onclick="topScroll()" style="float: right">Top</button>
 
 </div>
+
+<script>
+
+    window.onscroll = function(){stickyFunc()};
+
+    var topbar = document.getElementById("topbar");
+
+    var sticky = topbar.offsetTop;
+
+    function stickyFunc() {
+        if (window.pageYOffset >= sticky) {
+            topbar.classList.add("sticky")
+        } else {
+            topbar.classList.remove("sticky");
+        }
+    } 
+
+</script>
+
+<script>
+
+    function topScroll() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+
+</script>
